@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>바로약 관리자 Guide</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../resources/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../resources/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <!-- date-range-picker -->
+    <link rel="stylesheet" href="../../../resources/plugins/daterangepicker/daterangepicker.css">
+    <!-- Template style -->
+    <link rel="stylesheet" href="../../resources/css/adminlte.css">
+    <!-- Common style -->
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- Additional style -->
+    <link rel="stylesheet" href="../../resources/css/additional.css">
+</head>
+
+<body>
+
+    <style>
+        body {
+            background: #f6f6f2;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #guide {
+            overflow: hidden;
+        }
+
+        section {
+            float: left;
+            padding: 15px 20px;
+            width: 50%;
+        }
+
+        section>div+div {
+            margin-top: 5px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        h2::before {
+            content: '#';
+        }
+
+        @media (max-width: 991.98px) {
+            section {
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    </style>
+    <div id="guide">
+        <h1>바로약 가이드</h1>
+        <section>
+            <h2>Icon</h2>
+            <div style="background: rgba(0,0,0,0.25);padding: 10px;">
+                <i class="icon-logo-sm"></i>
+                <i class="icon-logo"></i>
+                <i class="icon-menu"></i>
+                <i class="icon-logout"></i>
+                <i class="icon-global"></i>
+                <i class="icon-regional"></i>
+                <i class="icon-country"></i>
+                <i class="icon-statistic"></i>
+                <i class="icon-admin"></i>
+                <i class="icon-plus"></i>
+                <i class="icon-minus"></i>
+                <i class="icon-s-arr-down"></i>
+                <i class="icon-home"></i>
+                <i class="icon-trophy"></i>
+                <i class="icon-clock"></i>
+                <i class="icon-search"></i>
+                <i class="icon-prev"></i>
+                <i class="icon-next"></i>
+                <i class="icon-import"></i>
+                <i class="icon-s-add"></i>
+                <i class="icon-s-minus"></i>
+                <i class="icon-refresh"></i>
+                <i class="icon-photo"></i>
+                <i class="icon-close"></i>
+                <i class="icon-top"></i>
+            </div>
+        </section>
+        <section>
+            <h2>버튼</h2>
+            <div>
+                <button type="button" class="btn btn-primary btn-block">버튼(block)</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary">버튼</button>
+                <button type="button" class="btn btn-secondary">버튼</button>
+                <button type="button" class="btn btn-success">버튼</button>
+                <button type="button" class="btn btn-info">버튼</button>
+                <button type="button" class="btn btn-warning">버튼</button>
+                <button type="button" class="btn btn-danger">버튼</button>
+                <button type="button" class="btn btn-dark">버튼</button>
+                <button type="button" class="btn btn-light">버튼</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary min-w-100px">버튼</button>
+                <button type="button" class="btn btn-secondary min-w-100px">버튼</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-primary">버튼</button>
+                <button type="button" class="btn btn-outline-secondary">버튼</button>
+                <button type="button" class="btn btn-outline-success">버튼</button>
+                <button type="button" class="btn btn-outline-info">버튼</button>
+                <button type="button" class="btn btn-outline-warning">버튼</button>
+                <button type="button" class="btn btn-outline-danger">버튼</button>
+                <button type="button" class="btn btn-outline-dark">버튼</button>
+                <button type="button" class="btn btn-outline-light">버튼</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-sm btn-primary">버튼</button>
+                <button type="button" class="btn btn-sm btn-success">버튼</button>
+                <button type="button" class="btn btn-sm btn-info">버튼</button>
+                <button type="button" class="btn btn-sm btn-danger">버튼</button>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-lg btn-primary">버튼</button>
+                <button type="button" class="btn btn-lg btn-success">버튼</button>
+                <button type="button" class="btn btn-lg btn-info">버튼</button>
+                <button type="button" class="btn btn-lg btn-danger">버튼</button>
+            </div>
+        </section>
+        <section>
+            <h2>버튼 그룹</h2>
+            <div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-success">오늘</button>
+                    <button type="button" class="btn btn-outline-success">최근7일</button>
+                    <button type="button" class="btn btn-outline-success">당월</button>
+                    <button type="button" class="btn btn-outline-success">전월</button>
+                    <button type="button" class="btn btn-outline-success">3개월</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>버튼 정렬</h2>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-dark min-w-100px">조회</button>
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="#none" class="btn btn-primary min-w-100px">등록</a>
+                <a href="#none" class="btn btn-default min-w-100px ml-2">취소</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#none" class="btn btn-primary">삭제</a>
+                <a href="#none" class="btn btn-primary ml-2"><i class="fas fa-file-excel"></i> 엑셀 다운로드</a>
+            </div>
+        </section>
+        <section>
+            <h2>Form</h2>
+
+            <div>
+                <div class="date-wrap d-flex align-items-center">
+                    <select name="" id="" class="form-control">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                    </select>
+                    <span>년</span>
+                    <select name="" id="" class="form-control">
+                        <option value="">10</option>
+                        <option value="">12</option>
+                    </select>
+                    <span>월</span>
+                </div>
+                <div class="row row-40">
+                    <div class="col-12 col-md">
+                        <div class="form-group">
+                            <label for="form3">핸드폰번호</label>
+                            <div class="phone d-flex align-items-center">
+                                <input type="text" class="form-control">
+                                <span>-</span>
+                                <input type="text" class="form-control">
+                                <span>-</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-40">
+                    <div class="col-12 col-md">
+                        <div class="form-group">
+                            <label for="form1">이메일</label>
+                            <input type="text" id="form1" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-40">
+                    <div class="col-12 col-md">
+                        <div class="form-group">
+                            <label for="form2">회원정보</label>
+                            <div class="d-flex">
+                                <label class="custom-control custom-control-radio">
+                                    <input type="radio" id="s1" name="status" checked><span>정상회원</span><i></i>
+                                </label>
+                                <label class="custom-control custom-control-radio">
+                                    <input type="radio" id="s2" name="status"><span>회원정지사유</span><i></i>
+                                </label>
+                                <input type="text" id="form1" class="form-control w-400">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="form1">제목</label>
+                    <div class="row row-10 align-items-end">
+                        <div class="col"><input type="text" class="form-control" id="form1" maxlength="15"
+                                data-byte-target="#byte-check-title"></div>
+                        <div class="col-auto">(<span id="byte-check-title">0</span>/15)</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="form2">첨부파일</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="noticeFile">
+                            <label class="custom-file-label" for="noticeFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="form3">내용</label>
+                    <textarea name="" id="form3" cols="" rows="2" class="form-control" maxlength="500"
+                        data-byte-target="#byte-check-cont"></textarea>
+                    <div class="text-right mt-2">(<span id="byte-check-cont">0</span>/500)</div>
+                </div>
+            </div>
+            <div class="row row-40">
+                <div class="col-12 col-md">
+                    <div class="form-group">
+                        <label for="form3">읽기전용입니다</label>
+                        <input type="text" class="form-control" value="관리자" readonly>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="form-group">
+                        <label for="form3">읽기전용입니다</label>
+                        <input type="text" class="form-control" value="2020-12-01" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-40">
+                <div class="col-12 col-md">
+                    <div class="form-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Form 요소</h2>
+            <div>
+                <input type="text" class="form-control">
+                <select name="" id="" class="form-control">
+                    <option value="">select medium</option>
+                    <option value="">20</option>
+                </select>
+                <select name="" id="" class="form-control form-control-sm">
+                    <option value="">select small</option>
+                    <option value="">20</option>
+                </select>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-append">
+                        <button class="btn btn-primary"><i class="icon-search"><span
+                                    class="sr-only">SEARCH</span></i></button>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <label class="custom-control custom-control-radio">
+                    <input type="radio" id="s1" name="status"><span>활성화</span><i></i>
+                </label>
+                <label class="custom-control custom-control-radio">
+                    <input type="radio" id="s2" name="status"><span>비활성화</span><i></i>
+                </label>
+
+                <label class="custom-control custom-control-checkbox-square">
+                    <input type="checkbox" id="" name=""><span>자동 로그인</span><i></i>
+                </label>
+
+                <label class="custom-control custom-control-checkbox-primary">
+                    <input type="checkbox" id="" name=""><span>North America</span><i></i>
+                </label>
+
+                <label class="custom-control custom-control-checkbox-primary m-0">
+                    <input type="checkbox" id="" name=""><i></i>
+                </label>
+
+            </div>
+        </section>
+        <section>
+            <h2>서브 타이틀</h2>
+            <div>
+                <div class="sub-title-area">
+                    <div class="sub-title">약관 등록</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Text</h2>
+            <div>
+                <span class="text-primary">텍스트 컬러</span>
+                <span class="text-secondary">텍스트 컬러</span>
+                <span class="text-info">텍스트 컬러</span>
+                <span class="text-success">텍스트 컬러</span>
+                <span class="text-danger">텍스트 컬러</span>
+                <a href="#none" class="text-underline">텍스트 underline</a>
+            </div>
+        </section>
+        <section>
+            <h2>Align</h2>
+            <div>
+                <div class="text-left">텍스트 정렬</div>
+                <div class="text-center">텍스트 정렬</div>
+                <div class="text-right">텍스트 정렬</div>
+            </div>
+        </section>
+        <section>
+            <h2>Tab</h2>
+            <div>
+                <nav class="main-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#t1" role="tab">Sales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#t2" role="tab">Service</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12 col-md mt-5">
+                <div class="card card-primary card-outline card-outline-tabs">
+                    <div class="card-header p-0 border-bottom-0">
+                        <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-home-tab" data-toggle="pill"
+                                    href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home"
+                                    aria-selected="false">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tabs-three-profile-tab" data-toggle="pill"
+                                    href="#custom-tabs-three-profile" role="tab"
+                                    aria-controls="custom-tabs-three-profile" aria-selected="true">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill"
+                                    href="#custom-tabs-three-messages" role="tab"
+                                    aria-controls="custom-tabs-three-messages" aria-selected="false">Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-settings-tab" data-toggle="pill"
+                                    href="#custom-tabs-three-settings" role="tab"
+                                    aria-controls="custom-tabs-three-settings" aria-selected="false">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="custom-tabs-three-tabContent">
+                            <div class="tab-pane fade" id="custom-tabs-three-home" role="tabpanel"
+                                aria-labelledby="custom-tabs-three-home-tab">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </div>
+                            <div class="tab-pane fade active show" id="custom-tabs-three-profile" role="tabpanel"
+                                aria-labelledby="custom-tabs-three-profile-tab">
+                                Mauris tincidunt mi at erat gravida,
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel"
+                                aria-labelledby="custom-tabs-three-messages-tab">
+                                Morbi turpis dolor, vulputate vitae felis non,
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel"
+                                aria-labelledby="custom-tabs-three-settings-tab">
+                                Pellentesque vestibulum commodo nibh nec blandit.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Card</h2>
+            <div>
+                <div class="card card-primary card-outline mb-4">
+                    <div class="card-body">
+                        <div class="row row-40">
+                            <div class="col-12 col-md">
+                                <div class="form-group">
+                                    <label for="form1">진료고유번호/환자명</label>
+                                    <div class="row row-10 align-items-center">
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <button type="button" class="btn btn-dark min-w-100px">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-40">
+                            <div class="col-12 col-md">
+                                <div class="form-group">
+                                    <label for="form1">등록기간</label>
+                                    <div class="row row-10 align-items-center">
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i
+                                                            class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control float-right"
+                                                    data-event="rangeDatepicker" id="date-range">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <button type="button" class="btn btn-dark min-w-100px">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-40">
+                            <div class="col-12 col-md">
+                                <div class="form-group">
+                                    <label for="form3">그룹</label>
+                                    <select name="" id="form3" class="form-control">
+                                        <option value="">전체</option>
+                                        <option value="">정회원</option>
+                                        <option value="">탈퇴회원</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="form-group">
+                                    <label for="form3">담당자명</label>
+                                    <select name="" id="form3" class="form-control">
+                                        <option value="">전체</option>
+                                        <option value="">정회원</option>
+                                        <option value="">탈퇴회원</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Table</h2>
+            <div>
+                <table class="table table-bordered table-mobile-normal">
+                    <caption>Driver Evaluation Table</caption>
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            <th class="text-center">Performance (Act/Pos)</th>
+                            <th class="text-center">Driver Evaluation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center mobile-subject">First point of contact</td>
+                            <td class="text-center" data-label="Performance (Act/Pos)">2/3</td>
+                            <td class="text-center" data-label="Driver Evaluation">5</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center mobile-subject">First point of contact</td>
+                            <td class="text-center" data-label="Performance (Act/Pos)">2/3</td>
+                            <td class="text-center" data-label="Driver Evaluation">5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">작성자</th>
+                            <td class="text-center">관리자</td>
+
+                            <th class="text-center">등록일</th>
+                            <td class="text-center">2020-12-01</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">작성자</th>
+                            <td class="text-center">관리자</td>
+
+                            <th class="text-center">등록일</th>
+                            <td class="text-center">2020-12-01</td>
+
+                            <th class="text-center">담당자</th>
+                            <td class="text-center">김간호사</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+        <section>
+            <h2>엑셀 업로드 리스트</h2>
+            <div>
+                <div class="excel-list">
+                    <div class="list">
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden99</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1000</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden5000</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden1</span></div>
+                        <div class="item"><span>hidden10000</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="../../resources/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../resources/plugins/datatables/js/dataTables.bootstrap4.js"></script>
+    <!-- moment -->
+    <script src="../../../resources/plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../../resources/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/js/adminlte.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
