@@ -42,11 +42,9 @@
                 </li>
             </ul>
             <ul class="gnb d-flex">
-                <!-- Messages Dropdown Menu -->
-                <li class="gnb-item active">
+                <li class="gnb-item">
                     <a class="nav-link" href="../member/member_list.html">회원(환자) 관리</a>
                 </li>
-                <!-- Notifications Dropdown Menu -->
                 <li class="gnb-item">
                     <a class="nav-link" href="../dosage/dosage_list.html">투약정보 관리</a>
                 </li>
@@ -56,7 +54,7 @@
                 <li class="gnb-item">
                     <a class="nav-link" href="../statistics/member.html">통계 관리</a>
                 </li>
-                <li class="gnb-item">
+                <li class="gnb-item active">
                     <a class="nav-link" href="../system/authority.html">시스템 관리</a>
                 </li>
             </ul>
@@ -67,7 +65,8 @@
         <aside class="main-sidebar">
             <!-- Brand Logo -->
             <a href="../administration/terms_list.html" class="brand-link">
-                <img src="../../resources/images/baroyak.png" alt="Logo" class="brand-image img-circle" style="opacity: .8">
+                <img src="../../resources/images/logo-to.png" alt="Logo" class="brand-image img-circle"
+                    style="opacity: .8">
                 <span class="brand-text">BAROYAK</span>
             </a>
 
@@ -81,14 +80,14 @@
                             <a href="#" class="nav-link">
                                 <i class="fas fa-user-friends"></i>
                                 <p class="ml-2">
-                                    회원 (환자) 관리
+                                    시스템 관리
                                 </p>
                             </a>
 
                             <ul class="depth">
-                                <li class=""><a href="member_list.html">회원(환자) 목록</a></li>
-                                <li class=""><a href="member_form.html">회원 개별 등록</a></li>
-                                <li class="active"><a href="member_excel.html">엑셀 회원 등록</a></li>
+                                <li class=""><a href="authority.html">내부사용자 & 권한</a></li>
+                                <li class=""><a href="password.html">비밀번호 변경</a></li>
+                                <li class="active"><a href="group.html">그룹관리</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -102,11 +101,11 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
-                <h1>엑셀 회원 등록</h1>
+                <h1>그룹관리</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">HOME</li>
-                    <li class="breadcrumb-item">회원 (환자) 관리 </li>
-                    <li class="breadcrumb-item active">엑셀 회원 등록</li>
+                    <li class="breadcrumb-item">시스템관리</li>
+                    <li class="breadcrumb-item active">그룹관리</li>
                 </ol>
             </div>
             <!-- /.content-header -->
@@ -115,56 +114,99 @@
             <div class="content-body">
                 <div class="content">
                     <div class="container-fluid">
-                        <div class="row row-40">
-                            <div class="col-12 col-md">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <p class="mr-3">엑섹파일등록</p>
-                                    <div class="form-group mb-0">
-                                        <div class="custom-file">
-                                          <input type="file" class="custom-file-input w-500" id="customFile">
-                                          <label class="custom-file-label" for="customFile"></label>
+                        <!-- 실 컨텐츠 -->
+                        <div class="card card-primary card-outline mb-4">
+                            <div class="card-body">
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">그룹선택</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">그룹을 선택해 주세요.</option>
+                                                <option value="">내과</option>
+                                                <option value="">외과</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-center ml-3">
-                                        <button type="button" class="btn btn-dark min-w-100px">엑셀 등록</button>
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">담당자명</label>
+                                            <input type="text" class="form-control" value="김의사">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">연락처</label>
+                                            <div class="phone d-flex align-items-center">
+                                                <input type="text" class="form-control" value="010">
+                                                <span>-</span>
+                                                <input type="text" class="form-control" value="1234">
+                                                <span>-</span>
+                                                <input type="text" class="form-control" value="5678">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">이메일(*)</label>
+                                            <input type="text" class="form-control" value="ghkswk123@gmail.com">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-40">
-                            <div class="col-12 col-md text-center mt-3">
-                                <a href="javascript:void(0)" download=""><i class="fas fa-file-excel mr-3"></i>바로앱회원등록샘플.excel</a>
-                            </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button type="button" class="btn btn-dark min-w-100px">조회</button>
                         </div>
-                        <!-- 실 컨텐츠 -->
                         <table class="table table-bordered" id="datatable">
                             <caption>BAROYAK 목록 테이블</caption>
                             <thead>
                                 <tr>
                                     <th class="text-center none-sort">No</th>
-                                    <th class="text-center none-sort">엑셀파일명</th>
-                                    <th class="text-center none-sort">업로드일시</th>
-                                    <th class="text-center none-sort">등록결과</th>
-                                    <th class="text-center none-sort">다운로드</th>
+                                    <th class="text-center none-sort">그룹명</th>
+                                    <th class="text-center none-sort">담당자</th>
+                                    <th class="text-center none-sort">연락처</th>
+                                    <th class="text-center none-sort">이메일</th>
+                                    <th class="text-center none-sort">등록일</th>
+                                    <th class="text-center none-sort">관리</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="text-center">10</td>
-                                    <td class="text-center">바로앱회원등록20201121.excel</td>
-                                    <td class="text-center">2020-11-25 10:00</td>
-                                    <td class="text-center">성공</td>
-                                    <td class="text-center"><i class="fas fa-file-excel"></i></td>
+                                    <td class="text-center">내과</td>
+                                    <td class="text-center">김간호사</td>
+                                    <td class="text-center">010-1234-5678</td>
+                                    <td class="text-center">abcd@naver.com</td>
+                                    <td class="text-center">2020-12-12</td>
+                                    <td class="text-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <button type="button" class="btn btn-dark min-w-100px">수정</button>
+                                            <button type="button" class="btn btn-dark min-w-100px ml-2">삭제</button>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">9</td>
-                                    <td class="text-center">바로앱회원등록20201121.excel</td>
-                                    <td class="text-center">2020-11-25 09:00</td>
-                                    <td class="text-center">실패</td>
-                                    <td class="text-center"><i class="fas fa-file-excel"></i></td>
+                                    <td class="text-center">외과</td>
+                                    <td class="text-center">김의사</td>
+                                    <td class="text-center">010-1234-5678</td>
+                                    <td class="text-center">abcd@naver.com</td>
+                                    <td class="text-center">2020-12-12</td>
+                                    <td class="text-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <button type="button" class="btn btn-dark min-w-100px">수정</button>
+                                            <button type="button" class="btn btn-dark min-w-100px ml-2">삭제</button>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="group_form.html" class="btn btn-dark min-w-100px">그룹등록관리</a>
+                        </div>
                         <!-- //실 컨텐츠 -->
 
                     </div>

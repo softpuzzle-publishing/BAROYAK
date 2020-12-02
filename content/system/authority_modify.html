@@ -42,11 +42,9 @@
                 </li>
             </ul>
             <ul class="gnb d-flex">
-                <!-- Messages Dropdown Menu -->
-                <li class="gnb-item active">
+                <li class="gnb-item">
                     <a class="nav-link" href="../member/member_list.html">회원(환자) 관리</a>
                 </li>
-                <!-- Notifications Dropdown Menu -->
                 <li class="gnb-item">
                     <a class="nav-link" href="../dosage/dosage_list.html">투약정보 관리</a>
                 </li>
@@ -56,7 +54,7 @@
                 <li class="gnb-item">
                     <a class="nav-link" href="../statistics/member.html">통계 관리</a>
                 </li>
-                <li class="gnb-item">
+                <li class="gnb-item active">
                     <a class="nav-link" href="../system/authority.html">시스템 관리</a>
                 </li>
             </ul>
@@ -67,7 +65,8 @@
         <aside class="main-sidebar">
             <!-- Brand Logo -->
             <a href="../administration/terms_list.html" class="brand-link">
-                <img src="../../resources/images/baroyak.png" alt="Logo" class="brand-image img-circle" style="opacity: .8">
+                <img src="../../resources/images/logo-to.png" alt="Logo" class="brand-image img-circle"
+                    style="opacity: .8">
                 <span class="brand-text">BAROYAK</span>
             </a>
 
@@ -81,14 +80,14 @@
                             <a href="#" class="nav-link">
                                 <i class="fas fa-user-friends"></i>
                                 <p class="ml-2">
-                                    회원 (환자) 관리
+                                    시스템 관리
                                 </p>
                             </a>
 
                             <ul class="depth">
-                                <li class="active"><a href="member_list.html">회원(환자) 목록</a></li>
-                                <li class=""><a href="member_form.html">회원 개별 등록</a></li>
-                                <li><a href="member_excel.html">엑셀 회원 등록</a></li>
+                                <li class="active"><a href="authority.html">내부사용자 & 권한</a></li>
+                                <li class=""><a href="password.html">비밀번호 변경</a></li>
+                                <li class=""><a href="group.html">그룹관리</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -102,11 +101,11 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
-                <h1>회원(환자) 목록</h1>
+                <h1>내부사용자 & 권한</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">HOME</li>
-                    <li class="breadcrumb-item">회원 (환자) 관리 </li>
-                    <li class="breadcrumb-item active">회원(환자) 등록</li>
+                    <li class="breadcrumb-item">시스템관리</li>
+                    <li class="breadcrumb-item active">내부사용자 & 권한</li>
                 </ol>
             </div>
             <!-- /.content-header -->
@@ -121,70 +120,92 @@
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">작성자</label>
-                                            <input type="text" class="form-control" value="관리자" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">등록일</label>
-                                            <input type="text" class="form-control" value="2020-12-01" readonly>
+                                            <label for="form3">이름(*)</label>
+                                            <input type="text" class="form-control" value="홍길동">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">진료고유번호</label>
-                                            <input type="text" class="form-control" value="">
+                                            <label for="form3">아이디(*)</label>
+                                            <input type="text" class="form-control" value="gildong">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">환자명</label>
-                                            <input type="text" class="form-control" value="">
+                                            <label for="form3">생년월일</label>
+                                            <input type="text" class="form-control" value="1977-12-01(양력)">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">핸드폰번호</label>
+                                            <label for="form3">패스워드(*)</label>
+                                            <input type="password" class="form-control" value="123123">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">패스워드확인(*)</label>
+                                            <input type="password" class="form-control" value="123123">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">부서</label>
+                                            <input type="text" class="form-control" value="부서">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">직책</label>
+                                            <input type="text" class="form-control" value="직책">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">이메일(*)</label>
+                                            <input type="text" class="form-control" value="ghkswk123@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-40">
+                                    <div class="col-12 col-md">
+                                        <div class="form-group">
+                                            <label for="form3">전화번호</label>
                                             <div class="phone d-flex align-items-center">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" value="02">
                                                 <span>-</span>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" value="1234">
                                                 <span>-</span>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" value="4567">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">이메일</label>
-                                            <input type="text" class="form-control" value="">
+                                            <label for="form3">핸드폰번호(*)</label>
+                                            <div class="phone d-flex align-items-center">
+                                                <input type="text" class="form-control" value="010">
+                                                <span>-</span>
+                                                <input type="text" class="form-control" value="1234">
+                                                <span>-</span>
+                                                <input type="text" class="form-control" value="5678">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">그룹</label>
-                                            <select name="" id="form3" class="form-control">
-                                                <option value="">선택해 주세요</option>
-                                                <option value="">정회원</option>
-                                                <option value="">탈퇴회원</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">담당자</label>
-                                            <select name="" id="form3" class="form-control">
-                                                <option value="">선택해 주세요</option>
-                                                <option value="">정회원</option>
-                                                <option value="">탈퇴회원</option>
-                                            </select>
+                                            <label for="form3">내용</label>
+                                            <textarea name="" id="form3" cols="" rows="2" class="form-control" maxlength="500" data-byte-target="#byte-check-cont">내용내용</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +217,7 @@
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form2">회원정보</label>
+                                            <label for="form2">회원상태</label>
                                             <div class="d-flex">
                                                 <label class="custom-control custom-control-radio">
                                                     <input type="radio" id="s1" name="status" checked><span>정상회원</span><i></i>
@@ -212,22 +233,19 @@
                                 <div class="row row-40">
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">비밀번호</label>
-                                            <input type="password" class="form-control" value="">
+                                            <label for="form3">비밀번호 초기화</label>
+                                            <div class="d-flex align-items-center">
+                                                <a href="#none" class="btn btn-dark w-100">초기화</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">비밀번호확인</label>
-                                            <input type="password" class="form-control" value="">
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
-                            <a href="#none" class="btn btn-dark">확인</a>
-                            <a href="#none" class="btn btn-danger ml-2">목록</a>
+                            <a href="#none" class="btn btn-dark">수정</a>
+                            <a href="#none" class="btn btn-danger ml-2">삭제</a>
                         </div>
                         <!-- //실 컨텐츠 -->
 
