@@ -98,6 +98,15 @@
 
 .w-500 { width: 500px !important; }
 
+/*height 값*/
+.m-height-300 { min-height: 200px !important; }
+
+.m-height-300 { min-height: 300px !important; }
+
+.m-height-400 { min-height: 400px !important; }
+
+.m-height-500 { min-height: 500px !important; }
+
 /* icons */
 [class*=icon-] { display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; font-size: 0; line-height: 1; }
 
@@ -162,13 +171,13 @@ select.form-control { -webkit-appearance: none; -moz-appearance: none; backgroun
 
 .custom-control.m-0 { vertical-align: middle; }
 
-.custom-control-radio i { background: #ff8041; border-radius: 50%; }
+.custom-control-radio i { background: #fff; border-radius: 50%; }
 
-.custom-control-radio input:checked ~ i { background: #ff8041; border-color: #333333; }
+.custom-control-radio input:checked ~ i { background: #fff; border-color: #ff8041; }
 
-.custom-control-radio input:checked ~ i::before { content: ''; display: block; width: 8px; height: 8px; border-radius: 50%; background: #333; position: absolute; left: 50%; top: 50%; margin: -4px 0 0 -4px; }
+.custom-control-radio input:checked ~ i::before { content: ''; display: block; width: 8px; height: 8px; border-radius: 50%; background: #ff8041; position: absolute; left: 50%; top: 50%; margin: -4px 0 0 -4px; }
 
-.custom-control-checkbox-primary i { background: #ff8041 url("../images/icon-ckck-beige.svg") no-repeat center; margin-top: -1px; }
+.custom-control-checkbox-primary i { background: #fff url("../images/icon-ckck-beige.svg") no-repeat center; margin-top: -1px; }
 
 .custom-control-checkbox-primary input:checked ~ i { background: #ff8041 url("../images/icon-ckck-light.svg") no-repeat center; }
 
@@ -178,11 +187,11 @@ select.form-control { -webkit-appearance: none; -moz-appearance: none; backgroun
 
 .custom-control-checkbox-square { font-size: 14px; min-height: 16px; }
 
-.custom-control-checkbox-square i { width: 16px; height: 16px; border: 1px solid #dee2e6; background: none; border-radius: 0; margin-top: -1px; }
+.custom-control-checkbox-square i { width: 16px; height: 16px; border: 1px solid #ddd; background: none; border-radius: 0; margin-top: -1px; }
 
-.custom-control-checkbox-square b, .custom-control-checkbox-square span { color: #dee2e6; }
+.custom-control-checkbox-square b, .custom-control-checkbox-square span { color: #ff8041; }
 
-.custom-control-checkbox-square input:checked ~ i { background: #dee2e6 url("../images/icon-s-checkbox-black.svg") no-repeat center/8.9px auto; border-color: #dee2e6; }
+.custom-control-checkbox-square input:checked ~ i { background: #fff url("../images/icon-s-checkbox-black.svg") no-repeat center/8.9px auto; border-color: #ff8041; }
 
 .btn-logout { width: 80px; height: 80px; background: #dee2e6; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-right: -1.5rem; }
 
@@ -314,17 +323,17 @@ body.body-login { height: 100vh; background: #ff8041; }
 
 .login-slogan .text p { margin-top: 15px; font-weight: 700; font-family: 'Play'; }
 
-.login { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: linear-gradient(141deg, #8b5874, #57404d); -webkit-box-shadow: -20px 0 45px 0 #00000029; box-shadow: -20px 0 45px 0 #00000029; }
+.login { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: linear-gradient(141deg, #fff, #fff); -webkit-box-shadow: -20px 0 45px 0 #00000029; box-shadow: -20px 0 45px 0 #00000029; }
 
 .login .form { width: 280px; }
 
-.login h1 { color: #fff; margin-bottom: 20px; font-size: 40px; }
+.login h1 { color: #ff8041; margin-bottom: 20px; font-size: 40px; }
 
 .login h1 strong { font-weight: 700; }
 
 .login h1 p { font-weight: 700; margin-top: 5px; font-family: 'Play'; }
 
-.login .form-control { border-color: #dee2e6; background: transparent; height: 40px; color: #fff; }
+.login .form-control { border-color: #ff8041; background: transparent; height: 40px; color: #333333; }
 
 .login .form-control::-webkit-input-placeholder { color: #ddd; }
 
@@ -336,7 +345,7 @@ body.body-login { height: 100vh; background: #ff8041; }
 
 .login .btn { height: 40px; font-weight: 700; }
 
-.login .btn:disabled, .login .btn.disabled { border-color: #fff; background: #fff; color: #ff8041; opacity: 1; }
+.login .btn:disabled, .login .btn.disabled { border-color: #ff8041; background: #fff; color: #ff8041; opacity: 1; }
 
 @media (max-width: 767.98px) { .login-slogan { position: fixed; z-index: -1; } }
 
@@ -420,11 +429,19 @@ html.is-loading #loading { display: block; }
 /*읽기 전용*/
 .form-control[readonly] { background-color: #fff; }
 
-/*날자셀렉트*/
+/*날짜셀렉트*/
 .date-wrap select { width: 150px; height: 35px; padding: 0 15px; }
 
 .date-wrap span { display: inline-block; margin: 0 10px; }
 
 /*모달*/
 .modal-header button { border: none; background: none; }
+
+/*앱관리*/
+.notice-desc { padding: 20px; }
+
+.notice-img { padding: 20px; }
+
+/*홈배너 관리*/
+.banner-cnt { font-size: 20px; font-weight: bold; padding: 10px 20px 0 10px; }
 /*# sourceMappingURL=style.css.map */

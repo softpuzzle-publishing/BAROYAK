@@ -32,7 +32,11 @@
 .w-300{width: 300px !important;}
 .w-400{width: 400px !important;}
 .w-500{width: 500px !important;}
-
+/*height 값*/
+.m-height-300{min-height: 200px !important;}
+.m-height-300{min-height: 300px !important;}
+.m-height-400{min-height: 400px !important;}
+.m-height-500{min-height: 500px !important;}
 /* icons */
 [class*=icon-]{display: inline-block;background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;font-size: 0;line-height: 1;}
 
@@ -92,16 +96,16 @@ select.form-control{
 }
 .custom-control-radio{
     i{
-        background: $primary;border-radius: 50%;
+        background: #fff;border-radius: 50%;
     }
     input:checked ~ i {
-        background: $primary;border-color: $teal;
-        &::before{content: '';display: block;width: 8px;height: 8px;border-radius: 50%;background: #333;position: absolute;left: 50%;top: 50%;margin: -4px 0 0 -4px;}
+        background: #fff;border-color: $primary;
+        &::before{content: '';display: block;width: 8px;height: 8px;border-radius: 50%;background: $primary;position: absolute;left: 50%;top: 50%;margin: -4px 0 0 -4px;}
     }
 }
 .custom-control-checkbox-primary{
     i{
-        background: $primary url('../images/icon-ckck-beige.svg') no-repeat center;margin-top: -1px;
+        background: #fff url('../images/icon-ckck-beige.svg') no-repeat center;margin-top: -1px;
     }
     input:checked ~ i {
         background: $primary url('../images/icon-ckck-light.svg') no-repeat center;
@@ -118,12 +122,12 @@ select.form-control{
 .custom-control-checkbox-square{
     font-size: 14px;min-height: 16px;
     i{
-        width: 16px; height: 16px;border: 1px solid $light;background: none;border-radius: 0;margin-top: -1px;
+        width: 16px; height: 16px;border: 1px solid #ddd;background: none;border-radius: 0;margin-top: -1px;
     }
     b,
-    span{color: $light;}
+    span{color: $primary;}
     input:checked ~ i {
-        background: $light url('../images/icon-s-checkbox-black.svg') no-repeat center/8.9px auto;border-color: $light;
+        background: #fff url('../images/icon-s-checkbox-black.svg') no-repeat center/8.9px auto;border-color: $primary;
     }
 }
 
@@ -306,18 +310,18 @@ body.body-login{
     }
 }
 .login{
-    height: 100vh;display: flex;align-items: center;justify-content: center;background-image: linear-gradient(141deg, #8b5874, #57404d);box-shadow: -20px 0 45px 0 #00000029;
+    height: 100vh;display: flex;align-items: center;justify-content: center;background-image: linear-gradient(141deg, #fff, #fff);box-shadow: -20px 0 45px 0 #00000029;
     .form{width: 280px;}
     h1{
-        color: #fff;margin-bottom: 20px;font-size: 40px;
+        color: $primary;margin-bottom: 20px;font-size: 40px;
         strong{font-weight: 700;}
         p{font-weight: 700;margin-top: 5px;font-family: 'Play';}
     }
-    .form-control{border-color: $light;background: transparent;height: 40px;color: #fff;}
+    .form-control{border-color: $primary;background: transparent;height: 40px;color: $teal;}
     .form-control::placeholder{color: #ddd;}
     .btn{height: 40px;font-weight: 700;
         &:disabled,
-        &.disabled{border-color: #fff;background: #fff;color: $primary;opacity: 1;}
+        &.disabled{border-color: $primary;background: #fff;color: $primary;opacity: 1;}
     }
 }
 @include media-breakpoint-down(sm) {
@@ -414,7 +418,7 @@ html.is-loading{
 }
 /*읽기 전용*/
 .form-control[readonly]{background-color: #fff;}
-/*날자셀렉트*/ 
+/*날짜셀렉트*/ 
 .date-wrap{
     select{width:150px;height:35px;padding:0 15px;}
     span{display: inline-block;margin:0 10px;}
@@ -423,3 +427,9 @@ html.is-loading{
 .modal-header{
     button{border:none;background:none;}
 }
+/*앱관리*/ 
+.notice-desc{ padding: 20px;}
+.notice-img { padding : 20px;}
+
+/*홈배너 관리*/ 
+.banner-cnt{font-size:20px; font-weight:bold; padding: 10px 20px 0 10px;}
