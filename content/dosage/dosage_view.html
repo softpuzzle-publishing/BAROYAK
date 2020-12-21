@@ -38,7 +38,7 @@
                     <a class="nav-link" href="../login/login.html">로그아웃</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">비밀번호 변경</a>
+                    <a class="nav-link" href="../system/password.html">비밀번호 변경</a>
                 </li>
             </ul>
             <ul class="gnb d-flex">
@@ -111,72 +111,33 @@
             <div class="content-body">
                 <div class="content">
                     <div class="container-fluid">
-                        <div class="card card-primary card-outline mb-4">
-                            <div class="card-body">
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form1">진료고유번호/환자명</label>
-                                            <div class="row row-10 align-items-center">
-                                                <div class="col">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <button type="button" class="btn btn-dark min-w-100px">검색</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form1">등록기간</label>
-                                            <div class="row row-10 align-items-center">
-                                                <div class="col">
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                                        </div>
-                                                        <input type="text" class="form-control float-right" data-event="rangeDatepicker" id="date-range">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <button type="button" class="btn btn-dark min-w-100px">검색</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row row-40">
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">그룹</label>
-                                            <select name="" id="form3" class="form-control">
-                                                <option value="">전체</option>
-                                                <option value="">정회원</option>
-                                                <option value="">탈퇴회원</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md">
-                                        <div class="form-group">
-                                            <label for="form3">담당자명</label>
-                                            <select name="" id="form3" class="form-control">
-                                                <option value="">전체</option>
-                                                <option value="">정회원</option>
-                                                <option value="">탈퇴회원</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                        </div>
+                        <table class="table table-bordered">
+                            <caption>BAROYAK 목록 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th class="text-center none-sort">진료고유번호</th>
+                                    <th class="text-center none-sort">환자명</th>
+                                    <th class="text-center none-sort">연락처</th>
+                                    <th class="text-center none-sort">이메일</th>
+                                    <th class="text-center none-sort">그룹</th>
+                                    <th class="text-center none-sort">담당자</th>
+                                    <th class="text-center none-sort">투약시작일</th>
+                                    <th class="text-center none-sort">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">2020101001</td>
+                                    <td class="text-center">김환자</td>
+                                    <td class="text-center">010-1234-5678</td>
+                                    <td class="text-center">baroyak@naver.com</td>
+                                    <td class="text-center">내과</td>
+                                    <td class="text-center">김간호사</td>
+                                    <td class="text-center">2020-12-12</td>
+                                    <td class="text-center">2020-12-12</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="row row-40">
                             <div class="col-12 col-md mt-5">
                                 <div class="main-tab">
@@ -248,7 +209,7 @@
                                                     <td class="text-center"><a href="javascript:void(0)" style="text-decoration: underline;" data-toggle="modal" data-target="#modal-dosage">보기</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">2020년 12월 02일(월)</td>
+                                                    <td class="text-center">2020년 12월 02일(화)</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center">08:10</td>
                                                     <td class="text-center">12:22</td>

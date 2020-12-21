@@ -1,3 +1,5 @@
+/* hover */
+a:hover{color:$primary;}
 /* aside */
 .depth{
     li{padding: 1rem;
@@ -9,12 +11,15 @@
         a{display:inline-block;width: 100%;}
     }
 }
-
-.gnb-item{border:1px solid #ddd;margin-left:-1px;
+.gnb{width:100%;}
+.gnb-item{width:20%;text-align:center;padding:10px 0;margin:15px 0;border:1px solid #ddd;margin-left:-1px;
     &.active{background-color: $primary;
         a{color:#fff;}
     }
 } 
+.navbar-expand .navbar-nav .nav-link{
+    padding-left:0;padding-right:0;margin-top:15px;
+}
 /*로고*/
 .brand-link{color:#333;}
 /*컨텐츠네비*/
@@ -122,7 +127,7 @@ select.form-control{
 .custom-control-checkbox-square{
     font-size: 14px;min-height: 16px;
     i{
-        width: 16px; height: 16px;border: 1px solid #ddd;background: none;border-radius: 0;margin-top: -1px;
+        width: 16px; height: 16px;border: 1px solid $primary;background: none;border-radius: 0;margin-top: 1px;
     }
     b,
     span{color: $primary;}
@@ -305,12 +310,16 @@ body.body-login{
 }
 .login-slogan{
     height: 100vh;display: flex;align-items: center;justify-content: center;background: $primary url('../images/bg-pattern.svg') no-repeat -200px 50%;background-size: auto 402px;
-    .text{line-height: 1.31;font-weight: 500;font-size: 40px;color: #fff;letter-spacing: 1.75px;text-align: center;
-        p{margin-top: 15px;font-weight: 700;font-family: 'Play';}
+    .notice{
+        .title{font-size: 30px;margin-bottom:20px;}
+        border:1px solid #fff;padding:30px;
+        p{color:#fff;}
+        ul{margin-bottom:20px;}
+        li{color:#fff; margin-bottom:10px;}
     }
 }
 .login{
-    height: 100vh;display: flex;align-items: center;justify-content: center;background-image: linear-gradient(141deg, #fff, #fff);box-shadow: -20px 0 45px 0 #00000029;
+    height: 100vh;display: flex;align-items: center;justify-content: center;background-image: linear-gradient(141deg, #f8f9fa, #f8f9fa);box-shadow: -20px 0 45px 0 #00000029;
     .form{width: 280px;}
     h1{
         color: $primary;margin-bottom: 20px;font-size: 40px;

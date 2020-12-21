@@ -63,6 +63,9 @@
 
 .row-100 > [class^=col] { padding-left: 50px; padding-right: 50px; }
 
+/* hover */
+a:hover { color: #ff8041; }
+
 /* aside */
 .depth li { padding: 1rem; border-bottom: 1px solid #ddd; }
 
@@ -72,11 +75,15 @@
 
 .depth li a { display: inline-block; width: 100%; }
 
-.gnb-item { border: 1px solid #ddd; margin-left: -1px; }
+.gnb { width: 100%; }
+
+.gnb-item { width: 20%; text-align: center; padding: 10px 0; margin: 15px 0; border: 1px solid #ddd; margin-left: -1px; }
 
 .gnb-item.active { background-color: #ff8041; }
 
 .gnb-item.active a { color: #fff; }
+
+.navbar-expand .navbar-nav .nav-link { padding-left: 0; padding-right: 0; margin-top: 15px; }
 
 /*로고*/
 .brand-link { color: #333; }
@@ -187,7 +194,7 @@ select.form-control { -webkit-appearance: none; -moz-appearance: none; backgroun
 
 .custom-control-checkbox-square { font-size: 14px; min-height: 16px; }
 
-.custom-control-checkbox-square i { width: 16px; height: 16px; border: 1px solid #ddd; background: none; border-radius: 0; margin-top: -1px; }
+.custom-control-checkbox-square i { width: 16px; height: 16px; border: 1px solid #ff8041; background: none; border-radius: 0; margin-top: 1px; }
 
 .custom-control-checkbox-square b, .custom-control-checkbox-square span { color: #ff8041; }
 
@@ -319,11 +326,17 @@ body.body-login { height: 100vh; background: #ff8041; }
 
 .login-slogan { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: #ff8041 url("../images/bg-pattern.svg") no-repeat -200px 50%; background-size: auto 402px; }
 
-.login-slogan .text { line-height: 1.31; font-weight: 500; font-size: 40px; color: #fff; letter-spacing: 1.75px; text-align: center; }
+.login-slogan .notice { border: 1px solid #fff; padding: 30px; }
 
-.login-slogan .text p { margin-top: 15px; font-weight: 700; font-family: 'Play'; }
+.login-slogan .notice .title { font-size: 30px; margin-bottom: 20px; }
 
-.login { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: linear-gradient(141deg, #fff, #fff); -webkit-box-shadow: -20px 0 45px 0 #00000029; box-shadow: -20px 0 45px 0 #00000029; }
+.login-slogan .notice p { color: #fff; }
+
+.login-slogan .notice ul { margin-bottom: 20px; }
+
+.login-slogan .notice li { color: #fff; margin-bottom: 10px; }
+
+.login { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: linear-gradient(141deg, #f8f9fa, #f8f9fa); -webkit-box-shadow: -20px 0 45px 0 #00000029; box-shadow: -20px 0 45px 0 #00000029; }
 
 .login .form { width: 280px; }
 

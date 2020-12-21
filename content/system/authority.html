@@ -38,7 +38,7 @@
                     <a class="nav-link" href="../login/login.html">로그아웃</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">비밀번호 변경</a>
+                    <a class="nav-link" href="../system/password.html">비밀번호 변경</a>
                 </li>
             </ul>
             <ul class="gnb d-flex">
@@ -114,22 +114,6 @@
             <div class="content-body">
                 <div class="content">
                     <div class="container-fluid">
-                        <div class="row row-40 mt-3">
-                            <div class="col-12 col-md">
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th class="text-center none-sort">총 회원수</th>
-                                            <td class="text-center">2112</td>
-                
-                                            <th class="text-center none-sort">신규 회원수</th>
-                                            <td class="text-center">12</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
                         <table class="table table-bordered" id="datatable">
                             <caption>BAROYAK 목록 테이블</caption>
                             <thead>
@@ -179,6 +163,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="authority_form.html" class="btn btn-dark">등록</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,9 +202,12 @@
     <script src="../../resources/js/ui.js"></script>
 
     <script>
-        $(document).ready(function(){
+          $(document).ready(function(){
             $('#datatable').DataTable({
                 "searching": false,
+                order: [[1, 'desc']], // 숫자가 높은 순으로
+                ordering: true,
+                serverSide: false 
             });
         });
     </script>

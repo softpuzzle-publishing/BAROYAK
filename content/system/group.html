@@ -38,7 +38,7 @@
                     <a class="nav-link" href="../login/login.html">로그아웃</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">비밀번호 변경</a>
+                    <a class="nav-link" href="../system/password.html">비밀번호 변경</a>
                 </li>
             </ul>
             <ul class="gnb d-flex">
@@ -150,7 +150,7 @@
                                     </div>
                                     <div class="col-12 col-md">
                                         <div class="form-group">
-                                            <label for="form3">이메일(*)</label>
+                                            <label for="form3">이메일</label>
                                             <input type="text" class="form-control" value="ghkswk123@gmail.com">
                                         </div>
                                     </div>
@@ -245,9 +245,12 @@
     <script src="../../resources/js/ui.js"></script>
 
     <script>
-        $(document).ready(function(){
+          $(document).ready(function(){
             $('#datatable').DataTable({
                 "searching": false,
+                order: [[1, 'desc']], // 숫자가 높은 순으로
+                ordering: true,
+                serverSide: false 
             });
         });
     </script>
