@@ -207,7 +207,21 @@ select.form-control { -webkit-appearance: none; -moz-appearance: none; backgroun
 
 .main-sidebar { background: #fff; -webkit-box-shadow: 0px 0px 10px 0px grey; box-shadow: 0px 0px 10px 0px grey; }
 
+.nav-sidebar .nav-item { background-color: #ffffff; }
+
+.nav-sidebar .nav-item .nav { background-color: #ffffff; }
+
+.nav-sidebar .nav-item.menu-open > .nav-link { background-color: #333; color: #ffffff; }
+
 .nav-sidebar .nav-item > .nav-link { color: #333; font-size: 18px; font-weight: 700; }
+
+.nav-sidebar .nav-item > .nav-link:focus { background-color: #000; }
+
+.nav-sidebar .nav-item > .nav > .nav-item > .nav-link { font-weight: 400; font-size: 15px; }
+
+.nav-sidebar .nav-item > .nav > .nav-item > .nav-link:focus { background-color: #fd7e14; color: #ffffff; }
+
+.nav-sidebar .nav-item > .nav > .nav-item > .nav-link.active { background-color: #fd7e14; color: #ffffff; font-weight: 400; font-size: 15px; }
 
 .sidebar { padding: 0; }
 
