@@ -28,18 +28,23 @@
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light flex-column">
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav d-flex align-items-center justify-content-between">
                 <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">홈</a>
-                </li>
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="../login/login.html">로그아웃</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../system/password.html">비밀번호 변경</a>
+                    <a href="#" data-widget="pushmenu" role="button"><i class="fas fa-bars"></i></a>
                 </li>
+                <ul class="d-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">홈</a>
+                    </li>
+                    <!-- Notifications Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../login/login.html">로그아웃</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../system/password.html">비밀번호 변경</a>
+                    </li>
+                </ul>
             </ul>
         </nav>
         <!-- /.navbar -->
