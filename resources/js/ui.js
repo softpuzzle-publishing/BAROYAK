@@ -68,3 +68,4 @@ Common.init();
 
 //aside
 $('.sidebar').load('../aside/aside.html');
+
